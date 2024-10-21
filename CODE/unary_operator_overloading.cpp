@@ -7,7 +7,7 @@ class Change{
     public:
     void set_val(int a, int b);
     void print();
-    void operator -();
+    void operator -();// return type operator operator_symbol();
 };
 
 void Change::set_val(int a,int b){
@@ -20,11 +20,12 @@ void Change::print(){
     cout<<n2<<endl;
 }
 
-void Change::operator -(){
+void Change::operator -(){//operator overload function
     // n1 = -n1;
     // n2 = -n2;
-    n1--;
-    n2--;
+    n1++;
+    n1++;
+    n2++;
 }
 
 int main() {

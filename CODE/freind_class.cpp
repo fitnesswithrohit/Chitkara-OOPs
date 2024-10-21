@@ -2,7 +2,8 @@
 using namespace std;
 
 class A{
-    int a=23,b=10;
+    int a=23;
+    int b=10;
     public:
     void print(){
         cout<<a<<" "<<b<<endl;
