@@ -4,27 +4,6 @@ using namespace std;
 int main(){
     vector<int> vec;
 
-    vector<int> vec2(5,1);
-    cout<<endl;
-    for(int j:vec2){
-        cout<<j<<" ";
-    }
-    cout<<endl;
-
-    vector<int> vec3(vec2.begin(),vec2.end());
-    cout<<endl;
-    for(int j:vec3){
-        cout<<j<<" ";
-    }
-    cout<<endl;
-
-    vector<int> vec4(vec3);
-    cout<<endl;
-    for(int j:vec4){
-        cout<<j<<" ";
-    }
-    cout<<endl;
-
     cout<<vec.size()<<endl;
     cout<<vec.capacity()<<endl;
 
@@ -66,7 +45,41 @@ int main(){
     cout<<vec.size()<<endl;
     vec.clear();
     cout<<vec.size()<<endl;
-    cout<<vec.empty();
+    cout<<vec.empty()<<endl;
+
+    vector<int> vec2(5,1);
+    
+    for(int j:vec2){
+        cout<<j<<" ";
+    }
+    cout<<endl;
+
+    vector<int> vec3(vec2.begin(),vec2.end());
+    cout<<endl;
+    for(int j:vec3){
+        cout<<j<<" ";
+    }
+    cout<<endl;
+
+    vector<int> vec4(vec3);
+    cout<<endl;
+    for(int j:vec4){
+        cout<<j<<" ";
+    }
+    cout<<endl;
+
+
+    // iterator
+    vector<int> check;
+    check.push_back(5);
+    check.push_back(6);
+    check.push_back(7);
+
+    vector<int>::iterator it = check.begin();
+    while(it != check.end()){
+        cout<<*it<<" ";
+        it++;
+    }
 
     return 0;
 } 
