@@ -16,9 +16,10 @@ int main()
     }
 
     cout<<endl;
-    cout<<arr.at(3)<<endl;
-    cout<<arr.front()<<endl;
-    cout<<arr.back()<<endl;
-    cout<<arr.empty()<<endl;
-    cout<<arr.size();
+    cout<<sizeof(arr)<<endl;
+    // cout<<arr.at(3)<<endl;
+    // cout<<arr.front()<<endl;
+    // cout<<arr.back()<<endl;
+    // cout<<arr.empty()<<endl;
+    // cout<<arr.size();
 }

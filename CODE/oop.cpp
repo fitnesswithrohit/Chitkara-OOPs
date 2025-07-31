@@ -1,29 +1,31 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// specifiers : public, private, protected
 class Avengers{
-    // public:
-    private:
-    int health;
+    public: 
+    // private:
+    int health; // by default ye private honge
     char level;
 
     public:
+
     Avengers(){
         cout<<"Hello constructor"<<endl;
     }
 
     Avengers(int health){
         this->health = health;
-        cout<<"Add of this: "<<this<<endl;
+        // cout<<"Add of this: "<<this<<endl;
     }
 
     Avengers(int health, char level){
-        this->health = health;
+        this->health = health;//  this keyword is a pointer to a object
         this->level = level;
         cout<<"Add of this: "<<this<<endl;
     }
 
-    int getHealth(){
+    int getHealth(){ //getter function for health
         return health;
     }
 
@@ -31,7 +33,7 @@ class Avengers{
         return level;
     }
 
-    void setHealth(int health){
+    void setHealth(int health){ // setter function for health
         this->health = health;
     }
 
@@ -47,8 +49,8 @@ int main(){
     // temp.health = 67;
     // cout<<temp.health;
     // Avengers hulk(10,'A');
-    // // hulk.health = 60;
-    // // hulk.level = 'A';
+    // hulk.health = 60;
+    // hulk.level = 'A';
     // cout<<hulk.health<<endl;
     // cout<<hulk.level<<endl;
 
@@ -61,7 +63,7 @@ int main(){
     // cout<<capt.getLevel()<<endl;
 
     
-    // Avengers *iron = new Avengers;
+    Avengers *iron = new Avengers;
     // Avengers *capton = new Avengers(11, 'B');
 
     // (*iron).setHealth(80);
@@ -70,12 +72,12 @@ int main(){
     // cout<<(*iron).getHealth()<<" "<<(*iron).getLevel()<<endl;
     // cout << sizeof(*iron);
 
-    // Avengers *iron = new Avengers;
-    // iron->setHealth(60);
-    // iron->setLevel('A');
-    // (*iron).setHealth(60);
-    // (*iron).setLevel('A');
+    Avengers *iron = new Avengers;
+    iron->setHealth(60);
+    iron->setLevel('A');
+    (*iron).setHealth(60);
+    (*iron).setLevel('A');
 
-    // cout<<(*iron).getHealth()<<" "<<(*iron).getLevel()<<endl;
-    // cout<<iron->getHealth()<<" "<<iron->getLevel()<<endl;
+    cout<<(*iron).getHealth()<<" "<<(*iron).getLevel()<<endl;
+    cout<<iron->getHealth()<<" "<<iron->getLevel()<<endl;
 }

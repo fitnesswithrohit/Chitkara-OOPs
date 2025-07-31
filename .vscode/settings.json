@@ -22,6 +22,7 @@
         "vector": "cpp",
         "new": "cpp",
         "typeindex": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "iostream": "cpp"
     }
 }

@@ -6,9 +6,9 @@ using namespace std;
 class Change{
     int a;
     public:
-    // Change(int n){
-    //     a = n;
-    // }
+    Change(int n){
+        a = n;
+    }
 
     void print(){
         cout<<a;
